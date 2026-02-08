@@ -29,7 +29,7 @@ test("Login and logout flow", async ({ page }) => {
   expect(loginUrl).toContain('/login')
 })
 
-test.only("Invalid Login", async ({ page }) => {
+test("Invalid Login", async ({ page }) => {
   await page.goto('https://practice.expandtesting.com/login')
   await page.fill('//input[@id="username"]', 'mohan')
   await page.fill('//input[@id="password"]', 'pass123')
